@@ -17,7 +17,7 @@ const Home = () => {
         async function fetchData() {
             await axios.get("https://precily-intern-be.herokuapp.com/api/getData")
             .then(res => {
-                if (res.data == "") {
+                if (res.data === "") {
                 } else {
                     setPanelText(res.data)
                 }
