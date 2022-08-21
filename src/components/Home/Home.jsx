@@ -8,7 +8,7 @@ const Home = () => {
 
     // Panel texts
     const [panelText, setPanelText] = useState({
-        panel1: "",
+        panel1: "Default Text in Panel 1",
         panel2: "",
         panel3: ""
     });
