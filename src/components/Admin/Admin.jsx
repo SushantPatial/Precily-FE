@@ -33,7 +33,7 @@ const Admin = () => {
     const [count, setCount] = useState(0);
 
     async function fetchCount() {
-        await axios.get("http://localhost:8000/api/count")
+        await axios.get("https://precily-intern-be.herokuapp.com/api/count")
         .then(res => {
             setCount(res.data)
         })
@@ -56,7 +56,7 @@ const Admin = () => {
     function addData(e) {
         e.preventDefault();
 
-        axios.post("http://localhost:8000/api/add", {
+        axios.post("https://precily-intern-be.herokuapp.com/api/add", {
             panel1: addText.panel1Add,
             panel2: addText.panel2Add,
             panel3: addText.panel3Add
@@ -89,7 +89,7 @@ const Admin = () => {
     function updateData(e) {
         e.preventDefault();
 
-        axios.patch("http://localhost:8000/api/update", {
+        axios.patch("https://precily-intern-be.herokuapp.com/api/update", {
             panel1: updateText.panel1Update,
             panel2: updateText.panel2Update,
             panel3: updateText.panel3Update

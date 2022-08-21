@@ -15,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
         async function fetchData() {
-            await axios.get("http://localhost:8000/api/getData")
+            await axios.get("https://precily-intern-be.herokuapp.com/api/getData")
             .then(res => {
                 setPanelText(res.data)
             })
