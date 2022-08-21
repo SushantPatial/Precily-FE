@@ -8,7 +8,7 @@ const Home = () => {
 
     // Panel texts
     const [panelText, setPanelText] = useState({
-        panel1: "Default Text in Panel 1",
+        panel1: "",
         panel2: "",
         panel3: ""
     });
@@ -18,9 +18,7 @@ const Home = () => {
             await axios.get("https://precily-intern-be.herokuapp.com/api/getData")
             .then(res => {
                 if (res.data == "") {
-                    console.log(res.data);
                 } else {
-                    console.log(res.data);
                     setPanelText(res.data)
                 }
             })
