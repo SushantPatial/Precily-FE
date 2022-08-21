@@ -1,0 +1,100 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-div {
+    width: 50vw;
+    position: absolute;
+    top: 100px;
+}
+.alert-div > * {
+    margin-bottom: 10px;
+}
+
+.admin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.admin .add, .admin .update {
+    height: 100%;
+    width: 45vw;
+    padding: 20px 0;
+    margin: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cfdaf7;
+}
+.admin .update {
+    background-color: #c4cfee;
+}
+.admin form > div {
+    margin-bottom: 10px;
+}
+.admin form h6 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.admin form textarea {
+    padding: 10px;
+    width: 30vw;
+    height: 50px;
+    resize: vertical;
+    border: 1px solid #bbb;
+    transition: 0.3s ease;
+}
+.admin form textarea:focus {
+    border-radius: 7px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(66, 75, 129, 0.37);
+}
+.admin form .form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin form .form-button button {
+    width: 130px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #4161b8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.admin form .form-button button:hover {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .admin-wrapper {
+        flex-direction: column;
+    }
+    .admin .add, .admin .update {
+        width: 90vw;
+    }
+    .admin form textarea {
+        width: 70vw;
+    }
+}
+@media screen and (max-height: 500px) {
+    .admin .add, .admin .update {
+        height: 100%;
+    }
+    .admin form textarea {
+        height: 10vh;
+    }
+}

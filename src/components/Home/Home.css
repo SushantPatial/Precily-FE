@@ -1,0 +1,24 @@
+.panel {
+    padding: 15px;
+}
+.panel-top {
+    display: flex;
+}
+.panel-1 {
+  background-color: #cfdaf7;
+}
+.panel-2 {
+    background-color: #c4cfee;
+}
+.panel-3 {
+    background-color: #aebce0;
+}
+.gutter {
+    background-color: #e5e7eb;
+}
+.gutter-horizontal {
+    cursor: col-resize;
+}
+.gutter-vertical {
+    cursor: row-resize;
+}

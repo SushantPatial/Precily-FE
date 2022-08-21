@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    background-color: #1F2937;
+}
+nav {
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+}
+nav a button {
+    color: #fff !important;
+}
+nav a button:hover {
+    background: #545cca36 !important;
+}
